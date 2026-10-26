@@ -17,7 +17,7 @@ namespace farkhutdinov_autoservice
 {
     /// <summary>
     /// Логика взаимодействия для AddEditPage.xaml
-    /// </summary>
+    /// </summary> 
     public partial class AddEditPage : Page
     {
         private Service _currentServiсe = new Service();
