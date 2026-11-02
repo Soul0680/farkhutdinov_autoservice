@@ -116,11 +116,11 @@ namespace farkhutdinov_autoservice
             var currentServices = Farkhutdinov_avtoserviceEntities.GetContext().Service.ToList();
             if(ComboType.SelectedIndex == 0)
             {
-                currentServices = currentServices.Where(p => (p.Discount==null || p.Discount >= 0 && p.Discount <= 100)).ToList();
+                currentServices = currentServices.Where(p => (p.Discount >= 0 && p.Discount <= 100)).ToList();
             }
             if (ComboType.SelectedIndex == 1)
             {
-                currentServices = currentServices.Where(p => (p.Discount == null || p.Discount >= 0 && p.Discount < 0.05 )).ToList();
+                currentServices = currentServices.Where(p => (p.Discount >= 0 && p.Discount < 0.05 )).ToList();
             }
             if (ComboType.SelectedIndex == 2)
             {
@@ -236,6 +236,11 @@ namespace farkhutdinov_autoservice
         private void PageListBox_MouseUp(object sender, MouseButtonEventArgs e)
         {
             ChangePage(0, Convert.ToInt32(PageListBox.SelectedItem.ToString()) - 1);
+        }
+
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SignUpPage((sender as Button).DataContext as Service));
         }
     }
 }

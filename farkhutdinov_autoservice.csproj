@@ -68,56 +68,59 @@
       <DependentUpon>AddEditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Client.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientService.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="DocumentByService.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="farkhutdinovModel1.Context.cs">
+    <Compile Include="FarkhutdinovModel1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>farkhutdinovModel1.Context.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="farkhutdinovModel1.cs">
+    <Compile Include="FarkhutdinovModel1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="farkhutdinovModel1.Designer.cs">
+    <Compile Include="FarkhutdinovModel1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>farkhutdinovModel1.edmx</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Gender.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Manufacturer.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductPhoto.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductSale.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Service.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="ServicePage.xaml.cs">
       <DependentUpon>ServicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ServicePhoto.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.xaml.cs">
+      <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tag.cs">
-      <DependentUpon>farkhutdinovModel1.tt</DependentUpon>
+      <DependentUpon>FarkhutdinovModel1.tt</DependentUpon>
     </Compile>
     <Page Include="AddEditPage.xaml">
       <SubType>Designer</SubType>
@@ -136,6 +139,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,12 +165,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="farkhutdinovModel1.edmx">
+    <EntityDeploy Include="FarkhutdinovModel1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>farkhutdinovModel1.Designer.cs</LastGenOutput>
+      <LastGenOutput>FarkhutdinovModel1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="farkhutdinovModel1.edmx.diagram">
-      <DependentUpon>farkhutdinovModel1.edmx</DependentUpon>
+    <None Include="App.Config" />
+    <None Include="FarkhutdinovModel1.edmx.diagram">
+      <DependentUpon>FarkhutdinovModel1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -172,22 +180,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="res\service_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="farkhutdinovModel1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>farkhutdinovModel1.Context.cs</LastGenOutput>
-      <DependentUpon>farkhutdinovModel1.edmx</DependentUpon>
-    </Content>
-    <Content Include="farkhutdinovModel1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>farkhutdinovModel1.edmx</DependentUpon>
-      <LastGenOutput>farkhutdinovModel1.cs</LastGenOutput>
-    </Content>
     <Resource Include="Услуги автосервиса\diz.jpg" />
     <Resource Include="Услуги автосервиса\rulevoe-upravlenie-avtomobilya.jpg" />
     <Resource Include="Услуги автосервиса\transmission.jpg" />
@@ -210,6 +205,17 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="FarkhutdinovModel1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FarkhutdinovModel1.edmx</DependentUpon>
+      <LastGenOutput>FarkhutdinovModel1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FarkhutdinovModel1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FarkhutdinovModel1.edmx</DependentUpon>
+      <LastGenOutput>FarkhutdinovModel1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

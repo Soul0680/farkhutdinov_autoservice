@@ -15,18 +15,20 @@ namespace farkhutdinov_autoservice
     
     public partial class Farkhutdinov_avtoserviceEntities : DbContext
     {
-        public Farkhutdinov_avtoserviceEntities()
-            : base("name=Farkhutdinov_avtoserviceEntities")
-        {
-        }
         private static Farkhutdinov_avtoserviceEntities _context;
-
+        
         public static Farkhutdinov_avtoserviceEntities GetContext()
         {
             if (_context == null)
                 _context = new Farkhutdinov_avtoserviceEntities();
             return _context;
         }
+
+        public Farkhutdinov_avtoserviceEntities()
+            : base("name=Farkhutdinov_avtoserviceEntities")
+        {
+        }
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
